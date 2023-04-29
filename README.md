@@ -1,6 +1,6 @@
 # attendance filler
 
-touch up of an automated school attendance google forms filler i used during online learning in 2020.
+touch up of an automated school attendance google forms filler i used during online learning in 2020-2021.
 
 normally to submit to a google form POST to forms/d/e/formid/formResponse is enough, however this form required you to be logged into your education email account, which took me a while to get around.
 
