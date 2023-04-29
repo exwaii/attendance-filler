@@ -8,4 +8,5 @@ eventually used selenium to headlessly log in every time and submit a prefilled 
 
 here's a video of an automated submission without --headless option.
 
-https://cdn.discordapp.com/attachments/946756429019226186/1101941163663044698/Desktop_2023.04.30_-_04.36.22.51.DVR_Trim_Trim.mp4
+
+https://user-images.githubusercontent.com/97266459/235319209-4e313e4f-c07b-4cd5-8d73-380401b6bd36.mp4
