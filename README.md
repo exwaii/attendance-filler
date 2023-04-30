@@ -2,7 +2,7 @@
 
 touch up of an automated school attendance google forms filler i used during online learning in 2020-2021.
 
-normally to submit to a google form POST to forms/d/e/formid/formResponse is enough, however this form required you to be logged into your education email account, which took me a while to get around.
+normally to submit to a google form POST to forms/d/e/formid/formResponse is enough, however my school's form required you to be logged into your education email account, which was annoying to solve.
 
 eventually used selenium to headlessly log in every time and submit a prefilled form. this is probably very bad practice, but i made this in y9.
 
