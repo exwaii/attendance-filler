@@ -16,10 +16,12 @@ email = os.getenv("EDU_EMAIL")
 username = os.getenv("DET_USERNAME")
 password = os.getenv("DET_PASSWORD")
 
+
 def submit(form):
     chrome_options = Options()
     chrome_options.add_argument('--headless')
-    driver = webdriver.Chrome(executable_path=driver_path, options=chrome_options)
+    driver = webdriver.Chrome(
+        executable_path=driver_path, options=chrome_options)
 
     # login to edu email acc
 
@@ -40,11 +42,11 @@ def submit(form):
     sleep(1)
     ActionChains(driver).send_keys(Keys.ENTER).perform()
     sleep(1)
-    
+
     # uncomment for not headless mode
     # continue_span = driver.find_element(By.XPATH, '//span[text()="Continue"]')
     # continue_span.click()
-    
+
     sleep(5)
 
     # open prefilled form
@@ -67,9 +69,9 @@ def submit(form):
     submit_span.click()
     sleep(2)
 
-
     # Close the browser window
     driver.quit()
+
 
 def main():
     submit(finalform(1))
@@ -77,3 +79,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
