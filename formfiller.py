@@ -10,6 +10,7 @@ load_dotenv()
 NAME = os.getenv("NAME")
 SURNAME = os.getenv("SURNAME")
 FORM = os.getenv("FORM")
+EMAIL = os.getenv("EDU_EMAIL")
 
 today = datetime.now()
 
@@ -24,6 +25,7 @@ def finalform(period):
     day = str(today.day)
     day = "0" + day if len(day) == 1 else day
     bigform = FORM
+    bigform += "emailAddress=" + EMAIL + "&"
     bigform += entries["name"] + "=" + NAME + "&"
     bigform += entries["surname"] + "=" + SURNAME + "&"
     bigform += entries["year"] + "=" + year + "&"
@@ -31,7 +33,6 @@ def finalform(period):
     bigform += entries['day'] + '=' + day + "&"
     bigform += entries["week"] + "=" + "Week+B" + "&"
     bigform += entries["weekday"] + '=' + weekday + "&"
-    # bigform += entries["periodb"][today.weekday()] + '=' + str(period) + "&"
     bigform += entries["periods"][0] + '=' + str(period) + "&"
 
     # bigform += timetable[today.weekday()][period - 1][1] + \
@@ -41,6 +42,6 @@ def finalform(period):
     
     return bigform
 
-
+print(finalform(1))
 
 
