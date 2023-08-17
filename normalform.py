@@ -12,6 +12,9 @@ data = {
     "entry.1169215245": "10 ENG BRK",
 }
 
+def data_to_query_string(url, data):
+    return url + "?" + "&".join([f"{k}={v}" for k, v in data.items()])
+
 real_data = {
     
 }

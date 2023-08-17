@@ -19,7 +19,7 @@ password = os.getenv("DET_PASSWORD")
 
 def submit(form):
     chrome_options = Options()
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     driver = webdriver.Chrome(
         executable_path=driver_path, options=chrome_options)
 
@@ -44,8 +44,8 @@ def submit(form):
     sleep(1)
 
     # uncomment for not headless mode
-    # continue_span = driver.find_element(By.XPATH, '//span[text()="Continue"]')
-    # continue_span.click()
+    continue_span = driver.find_element(By.XPATH, '//span[text()="Continue"]')
+    continue_span.click()
 
     sleep(5)
 
